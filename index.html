@@ -4,119 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joseph Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
-
-    header {
-      background: url('https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
-      height: 60vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-    }
-
-    section {
-      padding: 50px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .about {
-      display: flex;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .about img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 20px;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project-card {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
+  <link rel="stylesheet" href="project.css">
 </head>
 <body>
-
   <header>
     <h1>Joseph Pipomas Portfolio</h1>
   </header>
 
   <section class="about">
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=700&q=80" alt="Profile" />
-    <div>
-      <h2>About Me</h2>
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="https://images.unsplash.com/photo-1520975918318-3a48c1b1ad06?auto=format&fit=crop&w=800&q=80" alt="Profile">
       <p>
-        I am Joseph, a passionate web developer currently learning and improving my skills.
-        I enjoy creating beautiful websites and learning new technologies every day.
+        Hi! I'm Joseph, a passionate and motivated web developer. I build clean,
+        modern websites using HTML, CSS, and JavaScript.
       </p>
     </div>
   </section>
 
-  <section>
+  <section class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML & CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">UI/UX Design</div>
+      <div class="skill-box">Responsive Design</div>
+    </div>
+  </section>
+
+  <section class="projects-section">
     <h2>My Projects</h2>
     <div class="projects">
       <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=80" />
-        <h3>Project One</h3>
-        <p>A clean and modern website layout built using HTML and CSS.</p>
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=80">
+        <h3>Portfolio Website</h3>
+        <p>A clean responsive portfolio built using HTML and CSS.</p>
       </div>
-
       <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1520975918318-3a48c1b1ad06?auto=format&fit=crop&w=800&q=80" />
-        <h3>Project Two</h3>
-        <p>An interactive landing page designed with smooth transitions.</p>
+        <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=800&q=80">
+        <h3>Landing Page</h3>
+        <p>A modern landing page with smooth animations.</p>
       </div>
-
       <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=800&q=80" />
-        <h3>Project Three</h3>
-        <p>A responsive portfolio built to showcase my growing developer skills.</p>
+        <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80">
+        <h3>Business Website</h3>
+        <p>A multi-section layout for professional businesses.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Email">
+      <textarea rows="4" placeholder="Your Message"></textarea>
     </div>
   </section>
 
   <footer>
     © 2025 Joseph Pipomas — All Rights Reserved
   </footer>
-
 </body>
 </html>
